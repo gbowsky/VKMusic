@@ -1,3 +1,5 @@
+[[RUS]](https://github.com/gbowsky/VKMusic/blob/master/README.md.ru "[RUS]")[ENG]
+
 ![VK Logo](https://i.imgur.com/apwoYSS.png "VK Logo")
 
 ### What is working ?
