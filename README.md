@@ -1,4 +1,4 @@
-[[RUS]](https://github.com/gbowsky/VKMusic/blob/master/README.md.ru "[RUS]")[ENG]
+[[RUS]](https://github.com/gbowsky/VKMusic/blob/master/README.ru.md "[RUS]")[ENG]
 
 ![VK Logo](https://i.imgur.com/apwoYSS.png "VK Logo")
 
