@@ -1,0 +1,46 @@
+{
+  "props": [],
+  "components": {
+    "player": {
+      "type": "script\\MediaPlayerScript",
+      "x": 32,
+      "y": 16,
+      "props": {
+        "autoplay": "1",
+        "volume": "1.0",
+        "balance": "0.0",
+        "rate": "1.0"
+      }
+    },
+    "ini": {
+      "type": "script\\storage\\IniStorage",
+      "x": 80,
+      "y": 16,
+      "props": {
+        "path": "config.ini",
+        "autoSave": "1",
+        "multiLineValues": "1"
+      }
+    },
+    "timer": {
+      "type": "script\\TimerScript",
+      "x": 128,
+      "y": 16,
+      "props": {
+        "interval": "1000",
+        "repeatable": "1",
+        "autoStart": "1"
+      }
+    },
+    "systemTray": {
+      "type": "script\\SystemTrayScript",
+      "x": 192,
+      "y": 16,
+      "props": {
+        "visible": "1",
+        "tooltip": "ALDO CAJIDO",
+        "icon": ".data/img/icons8-vk.com-16.png"
+      }
+    }
+  }
+}
