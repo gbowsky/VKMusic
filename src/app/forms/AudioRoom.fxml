@@ -1,52 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.paint.*?><?import javafx.scene.web.*?><?import javafx.geometry.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480" prefWidth="280" styleClass="">
   <children>
-    <Slider AnchorPane.leftAnchor="48" AnchorPane.rightAnchor="88" blockIncrement="10" focusTraversable="true" id="progress" layoutX="48" layoutY="104" majorTickUnit="25" max="100" min="0" orientation="HORIZONTAL" prefHeight="24" prefWidth="144" showTickLabels="false" showTickMarks="false" snapToTicks="false" styleClass="slider " value="0"/>
-    <Data cursor="DEFAULT" enabled="1" id="data-progress" visible="1"/>
-    <Slider AnchorPane.rightAnchor="8" blockIncrement="10" focusTraversable="true" id="volume" layoutX="200" layoutY="104" majorTickUnit="25" max="1" min="0" orientation="HORIZONTAL" prefHeight="24" prefWidth="72" showTickLabels="false" showTickMarks="false" snapToTicks="false" styleClass="slider " value="1"/>
-    <Data cursor="DEFAULT" enabled="1" id="data-volume" visible="1"/>
-    <LabelEx AnchorPane.leftAnchor="48" AnchorPane.rightAnchor="64" alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="Title_audio" layoutX="48" layoutY="88" prefHeight="16" prefWidth="200" styleClass="label " text="Title - Artist" textAlignment="LEFT" underline="false" wrapText="false">
-      <font>
-        <Font name="System Regular" size="14"/>
-      </font>
-    </LabelEx>
-    <Data cursor="DEFAULT" enabled="1" id="data-Title_audio" visible="1"/>
-    <FlatButton AnchorPane.leftAnchor="8" alignment="CENTER" clickColor="#00000033" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="0" id="Play" layoutX="8" layoutY="88" prefHeight="32" prefWidth="32" styleClass="x-flat-button " text="" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
-      <font>
-        <Font name="Segoe MDL2 Assets" size="16"/>
-      </font>
-    </FlatButton>
-    <Data cursor="DEFAULT" enabled="1" graphic="" id="data-Play" visible="1"/>
-    <FlatButton AnchorPane.leftAnchor="104" alignment="CENTER" clickColor="#00000033" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="button" layoutX="104" layoutY="128" prefHeight="32" prefWidth="32" styleClass="x-flat-button " text="" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
-      <font>
-        <Font name="Segoe MDL2 Assets" size="16"/>
-      </font>
-    </FlatButton>
-    <Data cursor="DEFAULT" enabled="1" graphic="" id="data-button" visible="1"/>
-    <FlatButton AnchorPane.leftAnchor="72" alignment="CENTER" clickColor="#00000033" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="buttonAlt" layoutX="72" layoutY="128" prefHeight="32" prefWidth="32" styleClass="x-flat-button " text="" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
-      <font>
-        <Font name="Segoe MDL2 Assets" size="16"/>
-      </font>
-    </FlatButton>
-    <Data cursor="DEFAULT" enabled="1" graphic="" id="data-buttonAlt" visible="1"/>
-    <LabelEx AnchorPane.rightAnchor="8" alignment="CENTER_RIGHT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label" layoutX="208" layoutY="88" prefHeight="20" prefWidth="64" styleClass="label " text="00:00" textAlignment="LEFT" underline="false" wrapText="false">
-      <font>
-        <Font name="System Regular" size="14"/>
-      </font>
-    </LabelEx>
-    <Data cursor="DEFAULT" enabled="1" id="data-label" visible="1"/>
-    <ListViewEx AnchorPane.bottomAnchor="8" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="160" editable="false" fixedCellSize="-1" focusTraversable="true" id="listView" layoutX="0" layoutY="160" prefHeight="312" prefWidth="296" styleClass="list-view 123 ">
+    <ListViewEx AnchorPane.bottomAnchor="64" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="72" editable="false" fixedCellSize="-1" focusTraversable="true" id="listView" layoutX="0" layoutY="72" prefHeight="344" prefWidth="280" styleClass="list-view 123 ">
       <items xmlns:fx="http://javafx.com/fxml">
         <FXCollections fx:factory="observableArrayList"/>
       </items>
     </ListViewEx>
     <Data cursor="DEFAULT" enabled="1" id="data-listView" visible="1"/>
-    <TextField AnchorPane.leftAnchor="8" AnchorPane.rightAnchor="8" alignment="CENTER_LEFT" editable="true" focusTraversable="true" id="edit" layoutX="8" layoutY="48" prefColumnCount="12" prefHeight="32" prefWidth="280" promptText="Поиск аудиозаписей" styleClass="text-input text-field " text="">
-      <font>
-        <Font name="System Regular" size="12"/>
-      </font>
-    </TextField>
-    <Data cursor="DEFAULT" enabled="1" id="data-edit" visible="1"/>
     <ComboBox AnchorPane.leftAnchor="8" AnchorPane.rightAnchor="8" editable="false" focusTraversable="true" id="comboboxAlt" layoutX="8" layoutY="8" prefHeight="32" prefWidth="280" promptText="" style="-fx-padding: 0;" styleClass="combo-box-base combo-box " value="" visibleRowCount="10">
       <items xmlns:fx="http://javafx.com/fxml">
         <FXCollections fx:factory="observableArrayList">
@@ -56,17 +16,135 @@
       </items>
     </ComboBox>
     <Data cursor="DEFAULT" enabled="1" id="data-comboboxAlt" visible="1"/>
-    <FlatButton AnchorPane.leftAnchor="40" alignment="CENTER" clickColor="#00000033" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="button4" layoutX="40" layoutY="128" prefHeight="32" prefWidth="32" styleClass="x-flat-button " text="" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+    <Data cursor="DEFAULT" enabled="1" id="data-playlistpanel" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-searchpanel" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-panel" visible="1"/>
+    <FlatButton alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="button9" layoutX="8" layoutY="40" prefHeight="32" prefWidth="40" styleClass="x-flat-button " text="" textAlignment="CENTER" underline="false" wrapText="false">
       <font>
         <Font name="Segoe MDL2 Assets" size="16"/>
       </font>
     </FlatButton>
-    <Data cursor="DEFAULT" enabled="1" graphic="" id="data-button4" visible="1"/>
-    <FlatButton AnchorPane.leftAnchor="136" alignment="CENTER" clickColor="#00000033" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="button3" layoutX="136" layoutY="128" prefHeight="32" prefWidth="32" styleClass="x-flat-button " text="" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+    <Data cursor="DEFAULT" enabled="1" id="data-button9" visible="1"/>
+    <FlatButton alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="button5" layoutX="232" layoutY="40" prefHeight="32" prefWidth="40" styleClass="x-flat-button " text="" textAlignment="CENTER" underline="false" wrapText="false">
       <font>
         <Font name="Segoe MDL2 Assets" size="16"/>
       </font>
     </FlatButton>
-    <Data cursor="DEFAULT" enabled="1" graphic="" id="data-button3" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-button5" visible="1"/>
+    <Panel backgroundColor="#ffffff" borderColor="#c0c0c0" borderRadius="0" borderStyle="SOLID" borderWidth="0" focusTraversable="false" id="panel" layoutX="0" layoutY="416" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="120" prefWidth="280" styleClass="" titleColor="#dcdcdc" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <FlatButton AnchorPane.leftAnchor="8" alignment="CENTER" clickColor="#00000033" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="0" id="Play" layoutX="8" layoutY="16" prefHeight="32" prefWidth="32" styleClass="x-flat-button " text="" textAlignment="CENTER" underline="false" wrapText="false">
+          <font>
+            <Font name="Segoe MDL2 Assets" size="16"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" graphic="" id="data-Play" visible="1"/>
+        <LabelEx AnchorPane.leftAnchor="48" AnchorPane.rightAnchor="48" alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="Title_audio" layoutX="48" layoutY="16" prefHeight="20" prefWidth="184" styleClass="label " text="Title - Artist" textAlignment="LEFT" textFill="#000000" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="14"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-Title_audio" visible="1"/>
+        <Slider AnchorPane.leftAnchor="48" AnchorPane.rightAnchor="83" blockIncrement="10" focusTraversable="true" id="progress" layoutX="48" layoutY="32" majorTickUnit="25" max="100" min="0" orientation="HORIZONTAL" prefHeight="24" prefWidth="152" showTickLabels="false" showTickMarks="false" snapToTicks="false" styleClass="slider " value="0"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-progress" visible="1"/>
+        <Slider AnchorPane.rightAnchor="8" blockIncrement="10" focusTraversable="true" id="volume" layoutX="200" layoutY="32" majorTickUnit="25" max="1" min="0" orientation="HORIZONTAL" prefHeight="24" prefWidth="72" showTickLabels="false" showTickMarks="false" snapToTicks="false" styleClass="slider " value="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-volume" visible="1"/>
+        <FlatButton AnchorPane.leftAnchor="8" alignment="CENTER" clickColor="#00000033" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="button4" layoutX="8" layoutY="72" prefHeight="32" prefWidth="32" styleClass="x-flat-button " text="" textAlignment="CENTER" underline="false" wrapText="false">
+          <font>
+            <Font name="Segoe MDL2 Assets" size="16"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" graphic="" id="data-button4" visible="1"/>
+        <FlatButton AnchorPane.leftAnchor="48" alignment="CENTER" clickColor="#00000033" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="buttonAlt" layoutX="48" layoutY="72" prefHeight="32" prefWidth="32" styleClass="x-flat-button " text="" textAlignment="CENTER" underline="false" wrapText="false">
+          <font>
+            <Font name="Segoe MDL2 Assets" size="16"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" graphic="" id="data-buttonAlt" visible="1"/>
+        <FlatButton AnchorPane.leftAnchor="88" alignment="CENTER" clickColor="#00000033" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="button" layoutX="88" layoutY="72" prefHeight="32" prefWidth="32" styleClass="x-flat-button " text="" textAlignment="CENTER" underline="false" wrapText="false">
+          <font>
+            <Font name="Segoe MDL2 Assets" size="16"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" graphic="" id="data-button" visible="1"/>
+        <FlatButton AnchorPane.leftAnchor="128" alignment="CENTER" clickColor="#00000033" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="button3" layoutX="128" layoutY="72" prefHeight="32" prefWidth="32" styleClass="x-flat-button " text="" textAlignment="CENTER" underline="false" wrapText="false">
+          <font>
+            <Font name="Segoe MDL2 Assets" size="16"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" graphic="" id="data-button3" visible="1"/>
+        <LabelEx AnchorPane.rightAnchor="8" alignment="CENTER_RIGHT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label" layoutX="232" layoutY="16" prefHeight="20" prefWidth="40" styleClass="label " text="00:00" textAlignment="LEFT" textFill="#000000" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="14"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label" visible="1"/>
+        <FlatButton alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="button8" layoutX="0" layoutY="0" prefHeight="16" prefWidth="280" styleClass="x-flat-button " text="" textAlignment="CENTER" underline="false" wrapText="false">
+          <font>
+            <Font name="Segoe MDL2 Assets" size="16"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" id="data-button8" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Panel backgroundColor="#ffffff" borderColor="#c0c0c0" borderRadius="0" borderStyle="SOLID" borderWidth="0" focusTraversable="false" id="playlistpanel" layoutX="-288" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="480" prefWidth="280" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="labelAlt" layoutX="8" layoutY="8" prefHeight="32" prefWidth="232" styleClass="label " text="Ваши плейлисты" textAlignment="LEFT" underline="false" wrapText="false">
+          <font>
+            <Font name="System Bold" size="22"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-labelAlt" visible="1"/>
+        <ListViewEx editable="false" fixedCellSize="-1" focusTraversable="true" id="listView3" layoutX="8" layoutY="48" prefHeight="424" prefWidth="264" styleClass="list-view ">
+          <items xmlns:fx="http://javafx.com/fxml">
+            <FXCollections fx:factory="observableArrayList"/>
+          </items>
+        </ListViewEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-listView3" visible="1"/>
+        <FlatButton alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="button6" layoutX="240" layoutY="8" prefHeight="32" prefWidth="32" styleClass="x-flat-button " text="" textAlignment="CENTER" underline="false" wrapText="false">
+          <font>
+            <Font name="Segoe MDL2 Assets" size="16"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" id="data-button6" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Panel backgroundColor="#ffffff" borderColor="#c0c0c0" borderRadius="0" borderStyle="SOLID" borderWidth="0" focusTraversable="false" id="searchpanel" layoutX="288" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="480" prefWidth="280" styleClass="" titleColor="#dcdcdc" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <TextField AnchorPane.leftAnchor="48" AnchorPane.rightAnchor="8" alignment="CENTER_LEFT" editable="true" focusTraversable="true" id="edit" layoutX="48" layoutY="8" prefColumnCount="12" prefHeight="32" prefWidth="224" promptText="Поиск аудиозаписей" styleClass="text-input text-field " text="">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </TextField>
+        <Data cursor="DEFAULT" enabled="1" id="data-edit" visible="1"/>
+        <ListViewEx editable="false" fixedCellSize="-1" focusTraversable="true" id="listViewAlt" layoutX="8" layoutY="72" prefHeight="400" prefWidth="264" styleClass="list-view ">
+          <items xmlns:fx="http://javafx.com/fxml">
+            <FXCollections fx:factory="observableArrayList"/>
+          </items>
+        </ListViewEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-listViewAlt" visible="1"/>
+        <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label3" layoutX="8" layoutY="48" prefHeight="16" prefWidth="96" styleClass="label " text="В тренде :" textAlignment="LEFT" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="14"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label3" visible="1"/>
+        <FlatButton alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="button7" layoutX="8" layoutY="8" prefHeight="32" prefWidth="32" styleClass="x-flat-button " text="" textAlignment="CENTER" underline="false" wrapText="false">
+          <font>
+            <Font name="Segoe MDL2 Assets" size="16"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" id="data-button7" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
   </children>
 </AnchorPane>

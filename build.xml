@@ -67,7 +67,7 @@
         <launch4j>
             <config headerType="gui" outfile="${dist}/aldocajido.exe"
                     dontWrapJar="false" jarPath="${dist}/aldocajido.jar" chdir="."
-                    downloadUrl="http://java.com/download" icon="C:\Users\User\AppData\Local\Temp\72d6d3c8-8193-45c7-962c-95caeaaae9091155414177496917085.ico">
+                    downloadUrl="http://java.com/download" icon="C:\Users\User\AppData\Local\Temp\6ba00ad1-e67b-4bfc-acb4-9efebcc3b9af2378798488589999748.ico">
                 <classPath mainClass="org.develnext.jphp.ext.javafx.FXLauncher">
                     <cp>lib/*</cp>
                 </classPath>
