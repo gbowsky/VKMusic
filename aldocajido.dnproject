@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project author="User" authorOS="Windows 10" createdAt="1527467130365" ideName="DevelNext" ideVersion="16.7.0" ideVersionHash="2017103112" name="aldocajido" packageName="app" template="ide\project\templates\DefaultGuiProjectTemplate" updatedAt="1527687357440">
+<project author="User" authorOS="Windows 10" createdAt="1527467130365" ideName="DevelNext" ideVersion="16.7.0" ideVersionHash="2017103112" name="aldocajido" packageName="app" template="ide\project\templates\DefaultGuiProjectTemplate" updatedAt="1527715330225">
   <tree>
     <expanded>
     <path src=""/>
@@ -16,7 +16,6 @@
   <file src="aldocajido.dnproject"/>
     <file src="src/app/forms/MainForm.php"/>
     <file selected="1" src="src/app/forms/AudioRoom.php"/>
-    <file src="src/app/modules/playersModule.php"/>
   </openedFiles>
   <files/>
   <behaviours>

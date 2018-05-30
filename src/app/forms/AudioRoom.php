@@ -279,7 +279,7 @@ class AudioRoom extends AbstractForm
      */
     function doListViewAltAction(UXEvent $e = null)
     {    
-        $this->searchpanel->x = 288;
+        Animation::displace($this->searchpanel, 100, 288, 0);
         $this->comboboxAlt->selectedIndex = -1;
         $this->comboboxAlt->value = 'Поиск: '.$this->edit->text;
         $GLOBALS['big-list-count'] = 0;
@@ -296,7 +296,7 @@ class AudioRoom extends AbstractForm
         $GLOBALS['mode'] = 'playlist';
         $this->comboboxAlt->selectedIndex = -1;
         $this->comboboxAlt->value = 'Плейлист: '.$GLOBALS['playlists'][$this->listView3->selectedIndex]['title'];
-        $this->playlistpanel->x =-288;
+        Animation::displace($this->playlistpanel, 100, -288, 0);
         $this->getPlaylist();
     }
 
@@ -308,11 +308,11 @@ class AudioRoom extends AbstractForm
     {    
         if ($this->playlistpanel->x != 0)
         {
-            $this->playlistpanel->x = 0;
+            Animation::displace($this->playlistpanel, 100, 288, 0);
         }   
         else 
         {
-            $this->playlistpanel->x = -288;
+            Animation::displace($this->playlistpanel, 100, -288, 0);
         }
     }
 
@@ -323,11 +323,11 @@ class AudioRoom extends AbstractForm
     {    
         if ($this->searchpanel->x != 0)
         {
-            $this->searchpanel->x = 0;
+            Animation::displace($this->searchpanel, 100, -288, 0);
         }   
         else 
         {
-            $this->searchpanel->x = 288;
+            Animation::displace($this->searchpanel, 100, 288, 0);
         }
     }
 
@@ -336,8 +336,7 @@ class AudioRoom extends AbstractForm
      */
     function doButton6Action(UXEvent $e = null)
     {    
-        $this->playlistpanel->x = -288;
-        $this->searchpanel->x = 288;
+        Animation::displace($this->playlistpanel, 100, -288, 0);
     }
 
     /**
@@ -345,8 +344,7 @@ class AudioRoom extends AbstractForm
      */
     function doButton7Action(UXEvent $e = null)
     {
-        $this->playlistpanel->x = -288;
-        $this->searchpanel->x = 288;
+        Animation::displace($this->searchpanel, 100, 288, 0);
     }
 
     /**
@@ -359,17 +357,29 @@ class AudioRoom extends AbstractForm
         if ($this->panel->y != 416)
         {
             $this->button8->text = '';
-            $this->panel->y = 416;
+            Animation::displace($this->panel, 100, 0, 56);
         }   
         else 
         {
             $this->button8->text = '';
-            $this->panel->y = 360;
+            Animation::displace($this->panel, 100, 0, -56);
         }
     }
 
-
-
+    /**
+     * @event button10.action 
+     */
+    function doButton10Action(UXEvent $e = null)
+    {
+        if ($GLOBALS['now-playing']['lyrics_id'] != ""or null)
+        {
+            app()->getForm('Lyrics')->getLyrics($GLOBALS['now-playing']['lyrics_id']);
+        }
+        else 
+        {
+            $this->toast('Для данной песни текста не нашлось');
+        }
+    }
 
     function getPlaylist()
     {
