@@ -8,8 +8,10 @@
 - Downloading
 - Preloading
 - Shuffling
+- Playlist
+- Search
+- Trends
 
 ### What i will do in future update ?
 - Fixes
-- Mainpage as in site
 - Optimization(maybe)
