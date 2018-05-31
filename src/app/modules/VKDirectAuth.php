@@ -53,6 +53,12 @@ class VKDirectAuth extends AbstractModule
         }
     }
     
+    public static function logout()
+    {
+        fs::delete(self::$tokenFile);
+        app()->shutdown();
+    }
+    
     public static function settoken($token = '')
     {
         if ($token == '')
@@ -160,9 +166,6 @@ class VKDirectAuth extends AbstractModule
                     case 10://Ошибка авторизации
                         UXDialog::show('Вам необходимо повторно авторизоваться', 'ERROR');
                         self::logout();
-                        return self::checkAuth(function(){
-                            self::Query($method, $params, $callback, $jParams);
-                        });
                     break;    
                         //Нужно ввести капчу
                     case 14:
