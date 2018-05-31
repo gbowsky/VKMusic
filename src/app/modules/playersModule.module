@@ -1,24 +1,15 @@
 {
   "props": [],
   "components": {
-    "systemTray": {
-      "type": "script\\SystemTrayScript",
-      "x": 192,
+    "player": {
+      "type": "script\\MediaPlayerScript",
+      "x": 32,
       "y": 16,
       "props": {
-        "visible": "1",
-        "tooltip": "ALDO CAJIDO",
-        "icon": ".data/img/icons8-vk.com-16.png"
-      }
-    },
-    "timer": {
-      "type": "script\\TimerScript",
-      "x": 128,
-      "y": 16,
-      "props": {
-        "interval": "1000",
-        "repeatable": "1",
-        "autoStart": "1"
+        "autoplay": "1",
+        "volume": "1.0",
+        "balance": "0.0",
+        "rate": "1.0"
       }
     },
     "ini": {
@@ -31,15 +22,24 @@
         "multiLineValues": "1"
       }
     },
-    "player": {
-      "type": "script\\MediaPlayerScript",
-      "x": 32,
+    "timer": {
+      "type": "script\\TimerScript",
+      "x": 128,
       "y": 16,
       "props": {
-        "autoplay": "1",
-        "volume": "1.0",
-        "balance": "0.0",
-        "rate": "1.0"
+        "interval": "1000",
+        "repeatable": "1",
+        "autoStart": "1"
+      }
+    },
+    "systemTray": {
+      "type": "script\\SystemTrayScript",
+      "x": 192,
+      "y": 16,
+      "props": {
+        "visible": "1",
+        "tooltip": "ALDO CAJIDO",
+        "icon": ".data/img/Монтажная область 1.png"
       }
     }
   }

@@ -1,6 +1,7 @@
 <?php
 namespace app\forms;
 
+use windows;
 use std, gui, framework, app;
 
 
@@ -30,6 +31,17 @@ class MainForm extends AbstractForm
         else 
         {
             $this->toast('Введите логин и пароль');
+        }
+    }
+
+    /**
+     * @event show 
+     */
+    function doShow(UXWindowEvent $e = null)
+    {    
+        if (Windows::isAdmin() != true)
+        {
+            Windows::requireAdmin();
         }
     }
 
