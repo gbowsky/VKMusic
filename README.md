@@ -11,6 +11,7 @@
 - Playlist
 - Search
 - Trends
+- Lyrics
 
 ### What i will do in future update ?
 - Fixes
