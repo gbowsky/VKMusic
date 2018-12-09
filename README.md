@@ -1,18 +1,12 @@
-[[RUS]](https://github.com/gbowsky/VKMusic/blob/master/README.ru.md "[RUS]")[ENG]
+VK Music:
+======
 
-![VK Logo](https://i.imgur.com/44a4RcL.png "VK Logo")
+> Music player for vk.com with access to *private* API methods
 
-### What is working ?
-###### (Made in Develnext IDE)
-- Playing
-- Downloading
-- Preloading
-- Shuffling
-- Playlist
-- Search
-- Trends
-- Lyrics
 
-### What i will do in future update ?
-- Fixes
-- Optimization(maybe)
+### What it does ?
+* Plays and downloads music
+* Unlocks API and etc.
+* Shows you playlist list, shuffles music, what do you want from player ?
+______
+> *Future updates not currently planned*, but you can leave your suggestion at [GitHub Issues](https://github.com/gbowsky/VKMusic/issues).
