@@ -11,3 +11,5 @@ VK Music:
 ______
 
 > *Future updates not currently planned*, but you can leave your suggestion at [GitHub Issues](https://github.com/gbowsky/VKMusic/issues).
+
+### [Download](https://github.com/gbowsky/VKMusic/releases)
