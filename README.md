@@ -9,4 +9,5 @@ VK Music:
 * Unlocks API and etc.
 * Shows you playlist list, shuffles music, what do you want from player ?
 ______
+
 > *Future updates not currently planned*, but you can leave your suggestion at [GitHub Issues](https://github.com/gbowsky/VKMusic/issues).
